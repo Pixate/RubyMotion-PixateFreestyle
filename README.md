@@ -38,13 +38,7 @@ end
 
 ## Usage
 
-motion-pixate provides "style" method in REPL. You could change the stylesheet at the moment in REPL.
-```
-(main)> style "button { color : blue; }"
-(main)> style "button { background-color: red; corner-radius: 20pt; }"
-```
-
-motion-pixate supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixate:init` command. Then, `rake pixate:sass` command generates the stylesheet from `default.scss`.
+Pixate gem supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixate:init` command. Then, `rake pixate:sass` command generates the stylesheet from `default.scss`.
 
 You could specify the Sass output style through `style` environment variable. For example,
 ```
@@ -52,3 +46,9 @@ $ rake pixate:sass style=compressed
 ```
 
 You could use `nested`, `expanded`, `compact` and `compressed` as output style.
+
+Pixate gem provides "style" method in REPL. You could change the stylesheet at the moment in REPL. For example,
+```
+(main)> style "button { color : blue; }"
+(main)> style "button { background-color: red; corner-radius: 20pt; }"
+```
