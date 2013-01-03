@@ -61,3 +61,20 @@ module Motion; module Project; class Config
   end
 
 end; end; end
+
+namespace 'pixate' do
+  desc "Compile SCSS file"
+  task :sass do
+    unless File.exist?("sass/default.scss")
+      warn "Not found `sass/default.scss'"
+      exit
+    end
+
+    unless File.exist?("resources")
+      mkdir_p "resources"
+    end
+
+    sh "sass sass/default.scss resources/default.css"
+    App.info 'Compile', 'sass/default.scss'
+  end
+end

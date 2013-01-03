@@ -43,3 +43,5 @@ motion-pixate provides "style" method in REPL. You could change the stylesheet a
 (main)> style "button { color : blue; }"
 (main)> style "button { background-color: red; corner-radius: 20pt; }"
 ```
+
+motion-pixate supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` into the `sass` directory. `rake pixate:sass` command generates the stylesheet from `default.scss`.
