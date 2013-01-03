@@ -63,6 +63,21 @@ module Motion; module Project; class Config
 end; end; end
 
 namespace 'pixate' do
+  desc "Create initial stylesheet files"
+  task :init do
+    unless File.exist?("sass/default.scss")
+      mkdir_p "sass"
+      touch "sass/default.scss"
+      App.info 'Create', 'sass/default.scss'
+    end
+
+    unless File.exist?("resources/default.css")
+      mkdir_p "resources"
+      touch "resources/default.css"
+      App.info 'Create', 'resources/default.css'
+    end
+  end
+
   desc "Compile SCSS file"
   task :sass do
     unless File.exist?("sass/default.scss")
