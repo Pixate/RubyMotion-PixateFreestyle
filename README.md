@@ -45,3 +45,10 @@ motion-pixate provides "style" method in REPL. You could change the stylesheet a
 ```
 
 motion-pixate supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` into the `sass` directory. `rake pixate:sass` command generates the stylesheet from `default.scss`.
+
+You could specify the Sass output style through `style` environment variable. For example,
+```
+$ rake pixate:sass style=compressed
+```
+
+You could use `nested`, `expanded`, `compact` and `compressed` as output style.

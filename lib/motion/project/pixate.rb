@@ -74,7 +74,11 @@ namespace 'pixate' do
       mkdir_p "resources"
     end
 
-    sh "sass sass/default.scss resources/default.css"
+    style = ""
+    if ENV['style'].to_s.length > 0
+      style = "--style #{ENV['style']}"
+    end
+    sh "sass sass/default.scss resources/default.css #{style}"
     App.info 'Compile', 'sass/default.scss'
   end
 end
