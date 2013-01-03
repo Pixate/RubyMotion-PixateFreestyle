@@ -33,7 +33,7 @@ Motion::Project::App.setup do |app|
 end
 ```
 
-4. Create the `default.css` in `resources` directory. 
+4. Create the `default.css` in `resources` directory.
 
 
 ## Usage
@@ -50,5 +50,5 @@ You could use `nested`, `expanded`, `compact` and `compressed` as output style.
 Pixate gem provides "style" method in REPL. You could change the stylesheet at the moment in REPL. For example,
 ```
 (main)> style "button { color : blue; }"
-(main)> style "button { background-color: red; corner-radius: 20pt; }"
+(main)> style "button { background-color: red; border-radius: 20pt; }"
 ```
