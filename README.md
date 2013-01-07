@@ -11,7 +11,7 @@ Pixate gem for RubyMotion.
 
 ## Setup
 
-1. Download the Pixate Framework package from http://www.pixate.com/ and copy the `PXEngine.framework` folder into `vendor` directory. Create the `vendor` directory if it does not exist. You should have something like this.
+1. Download the Pixate Framework package from http://www.pixate.com/ and copy the `PXEngine.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
 $ ls vendor/PXEngine.framework
 /Headers/   PXEngine   Resources/ Versions/
@@ -35,6 +35,7 @@ end
 
 4. Create the `default.css` in `resources` directory.
 
+Note: To install the motion-pixate gem, see the [RubyGems site](https://rubygems.org/gems/motion-pixate).
 
 ## Usage
 
