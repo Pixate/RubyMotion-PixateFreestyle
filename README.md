@@ -108,6 +108,8 @@ $ rake pixate:sass style=compressed
 
 You could use `nested`, `expanded`, `compact` and `compressed` as output style.
 
+## REPL
+
 Pixate gem provides "style" method in REPL. You could change the stylesheet at the moment in REPL. For example,
 ```
 (main)> style "button { color : blue; }"
