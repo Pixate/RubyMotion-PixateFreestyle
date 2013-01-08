@@ -37,7 +37,60 @@ end
 
 Note: To install the motion-pixate gem, see the [RubyGems site](https://rubygems.org/gems/motion-pixate).
 
-## Usage
+## Example
+
+We'll take the Timer example that comes with RubyMotion and add Pixate and quickly style the application. Start by following the Setup steps above to add Pixate to the Timer project.
+
+Type `rake` to make sure everything is good so far. You should see the Timer app running.
+
+![Timer](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/timer_run.png)
+
+## Add the CSS File
+
+In the `default.css` file you added prior, let's add a simple entry:
+
+	button {
+		background: red;
+	}
+
+`Rake` again and you should see this:
+
+![Red Button](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/red_button.png)
+
+Let's pretty this button up with the following CSS:
+
+	button {
+		color            : #446620;
+		background-color : linear-gradient(#87c44a, #b4da77);
+		border-width     : 1px;
+		border-color     : #84a254;
+		border-radius    : 10px;
+		font-size        : 15px;
+		font-weight      : bold;
+	}
+	
+
+`Rake` again and you should see this:
+
+![Green Button](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/green_button.png)
+
+## Add a Styling ID
+
+Lastly, let's change the background color. Let's add an ID to our background view. In the `timer_controller.rb` file, add the following line before the `end` of `viewDidLoad`:
+
+	    view.styleId = 'myView'
+
+What's we've done here is add a `styleId` to the view so we can style it by name. Now add the following CSS after your button CSS that was already added:
+
+	#myView {
+		background: linear-gradient(#000000, #f2f4f6);
+	}
+
+Now you have a beautiful interface with just a few lines of CSS!
+
+![Final App](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/background_view.png)
+
+## SASS
 
 Pixate gem supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixate:init` command. Then, `rake pixate:sass` command generates the stylesheet from `default.scss`.
 
