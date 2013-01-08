@@ -49,9 +49,11 @@ Type `rake` to make sure everything is good so far. You should see the Timer app
 
 In the `default.css` file you added prior, let's add a simple entry:
 
+```css
 	button {
 		background: red;
 	}
+```
 
 `Rake` again and you should see this:
 
@@ -59,6 +61,7 @@ In the `default.css` file you added prior, let's add a simple entry:
 
 Let's pretty this button up with the following CSS:
 
+```css
 	button {
 		color            : #446620;
 		background-color : linear-gradient(#87c44a, #b4da77);
@@ -68,7 +71,7 @@ Let's pretty this button up with the following CSS:
 		font-size        : 15px;
 		font-weight      : bold;
 	}
-	
+```	
 
 `Rake` again and you should see this:
 
@@ -78,13 +81,17 @@ Let's pretty this button up with the following CSS:
 
 Lastly, let's change the background color. Let's add an ID to our background view. In the `timer_controller.rb` file, add the following line before the `end` of `viewDidLoad`:
 
+```css
 	    view.styleId = 'myView'
+```
 
 What's we've done here is add a `styleId` to the view so we can style it by name. Now add the following CSS after your button CSS that was already added:
 
+```css
 	#myView {
 		background: linear-gradient(#000000, #f2f4f6);
 	}
+```
 
 Now you have a beautiful interface with just a few lines of CSS!
 
