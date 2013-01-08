@@ -82,7 +82,7 @@ Let's pretty this button up with the following CSS:
 Lastly, let's change the background color. Let's add an ID to our background view. In the `timer_controller.rb` file, add the following line before the `end` of `viewDidLoad`:
 
 ```css
-	    view.styleId = 'myView'
+	view.styleId = 'myView'
 ```
 
 What's we've done here is add a `styleId` to the view so we can style it by name. Now add the following CSS after your button CSS that was already added:
