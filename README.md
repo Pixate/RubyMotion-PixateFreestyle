@@ -51,7 +51,7 @@ In the `default.css` file you added prior, let's add a simple entry:
 
 ```css
 	button {
-		background: red;
+		background-color: red;
 	}
 ```
 
@@ -89,7 +89,7 @@ What's we've done here is add a `styleId` to the view so we can style it by name
 
 ```css
 	#myView {
-		background: linear-gradient(#000000, #f2f4f6);
+		background-color: linear-gradient(#000000, #f2f4f6);
 	}
 ```
 
