@@ -23,7 +23,7 @@ require 'rubygems'
 require 'motion-pixate'
 ```
 
-3. Still in the `Rakefile`, set up the `user`, `key` and `framework` variables in your application configuration block.
+3. Still in the `Rakefile`, set up the `user`, `key` and `framework` variables in your application configuration block. For the **free** version of the Pixate Engine, `user` and `key` are **not** required.
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
