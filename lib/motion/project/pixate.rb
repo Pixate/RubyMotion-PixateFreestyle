@@ -31,8 +31,8 @@ class PixateConfig
 
 #{license}
 def style(str)
-  PXStylesheet.styleSheetFromSource(str, withOrigin:0)
-  PXStylesheet.applyStylesheets
+  PXEngine.styleSheetFromSource(str, withOrigin:0)
+  PXEngine.applyStylesheets
 end
 EOF
     pixate_file = './app/pixate_code.rb'
