@@ -28,9 +28,9 @@ For the **free** version of the Pixate Engine, `user` and `key` are **not** requ
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
-  app.pixate.framework = 'vendor/PXEngine.framework'
   app.pixate.user = 'USER ID' # Not required for free version
   app.pixate.key  = 'KEY CODE' # Not required for free version
+  app.pixate.framework = 'vendor/PXEngine.framework'
 end
 ```
 
