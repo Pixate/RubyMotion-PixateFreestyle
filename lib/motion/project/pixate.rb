@@ -65,7 +65,7 @@ end; end; end
 namespace 'pixate' do
   desc "Create initial stylesheet files"
   task :init do
-    if Dir.glob("sass/default.s*ss").empty?
+    if Dir.glob("sass/default.s[ac]ss").empty?
       mkdir_p "sass"
       touch "sass/default.scss"
       App.info 'Create', 'sass/default.scss'
@@ -80,7 +80,7 @@ namespace 'pixate' do
 
   desc "Compile SASS/SCSS file"
   task :sass do
-    unless sass_path = Dir.glob("sass/default.s*ss").first
+    unless sass_path = Dir.glob("sass/default.s[ac]ss").first
       warn "Not found `sass/default.scss'"
       exit
     end
