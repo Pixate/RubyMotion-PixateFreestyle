@@ -23,7 +23,7 @@ class PixateConfig
   def create_code
     license = ""
     if @user && @key
-      license = "PXEngine.licenseKey('#{@key}', forUser:'#{@user}')\n"
+      license = "PXEngine.initializeFrameworkWithKey('#{@key}', forUser:'#{@user}')\n"
     end
 
     code = <<EOF
@@ -65,7 +65,7 @@ end; end; end
 namespace 'pixate' do
   desc "Create initial stylesheet files"
   task :init do
-    unless File.exist?("sass/default.scss")
+    if Dir.glob("sass/default.s[ac]ss").empty?
       mkdir_p "sass"
       touch "sass/default.scss"
       App.info 'Create', 'sass/default.scss'
@@ -78,9 +78,9 @@ namespace 'pixate' do
     end
   end
 
-  desc "Compile SCSS file"
+  desc "Compile SASS/SCSS file"
   task :sass do
-    unless File.exist?("sass/default.scss")
+    unless sass_path = Dir.glob("sass/default.s[ac]ss").first
       warn "Not found `sass/default.scss'"
       exit
     end
@@ -93,7 +93,7 @@ namespace 'pixate' do
     if ENV['style'].to_s.length > 0
       style = "--style #{ENV['style']}"
     end
-    sh "sass sass/default.scss resources/default.css #{style}"
-    App.info 'Compile', 'sass/default.scss'
+    sh "sass #{sass_path} resources/default.css #{style}"
+    App.info 'Compile', sass_path
   end
 end
