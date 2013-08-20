@@ -23,7 +23,7 @@ class PixateConfig
   def create_code
     license = ""
     if @user && @key
-      license = "PXEngine.licenseKey('#{@key}', forUser:'#{@user}')\n"
+      license = "PXEngine.initializeFrameworkWithKey('#{@key}', forUser:'#{@user}')\n"
     end
 
     code = <<EOF
