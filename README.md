@@ -24,12 +24,12 @@ require 'motion-pixate'
 ```
 
 3. Still in the `Rakefile`, set up the `user`, `key` and `framework` variables in your application configuration block. 
-For the **free** version of the Pixate Engine, `user` and `key` are **not** required.
+This **free** key is available at [http://pixate.com/key](http://pixate.com/key).
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
-  app.pixate.user = 'USER ID' # Not required for free version
-  app.pixate.key  = 'KEY CODE' # Not required for free version
+  app.pixate.user = 'USER ID' # Valid key removes "splash screen"
+  app.pixate.key  = 'KEY CODE' # Visit pixate.com/key for a free key
   app.pixate.framework = 'vendor/PXEngine.framework'
 end
 ```
