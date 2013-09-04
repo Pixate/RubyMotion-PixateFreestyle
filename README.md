@@ -34,7 +34,13 @@ Motion::Project::App.setup do |app|
 end
 ```
 
-4. Create the `default.css` in `resources` directory.
+4. Note: As of Pixate 1.1 beta 4, you need to add the following line to your `app_delegate` file in the `application(application, didFinishLaunchingWithOptions:launchOptions)` method before the `@window.makeKeyAndVisible` call:
+
+```ruby
+	@window.styleMode = PXStylingNormal
+```
+
+5. Create the `default.css` in `resources` directory.
 
 Note: To install the motion-pixate gem, see the [RubyGems site](https://rubygems.org/gems/motion-pixate).
 
