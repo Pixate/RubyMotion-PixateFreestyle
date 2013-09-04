@@ -1,0 +1,10 @@
+button {
+	text: Pixate Says Hello!;
+	background-image: linear-gradient(blue, lightblue);
+	border-radius: 10px;
+}
+
+#myView {
+	background-image: linear-gradient(white, gray);
+}
+

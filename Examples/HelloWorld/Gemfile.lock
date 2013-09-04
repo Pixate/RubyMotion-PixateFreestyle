@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    motion-pixate (1.3)
+      sass
+    rake (10.1.0)
+    sass (3.2.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-pixate
+  rake
