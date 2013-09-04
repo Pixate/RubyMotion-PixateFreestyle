@@ -35,7 +35,6 @@ end
 ```
 
 4. Note: As of Pixate 1.1 beta 4, you need to add the following line to your `app_delegate` file in the `application(application, didFinishLaunchingWithOptions:launchOptions)` method before the `@window.makeKeyAndVisible` call:
-
 ```ruby
 	@window.styleMode = PXStylingNormal
 ```
