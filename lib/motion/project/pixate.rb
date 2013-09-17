@@ -13,7 +13,7 @@ class PixateConfig
     if @framework != path
       @config.unvendor_project(@framework)
       @framework = path
-      @config.vendor_project(path, :static, :products => ['PXEngine'], :headers_dir => 'Headers')
+      @config.vendor_project(path, :static, :products => ['Pixate'], :headers_dir => 'Headers')
       create_code
     end
   end
@@ -23,7 +23,7 @@ class PixateConfig
   def create_code
     license = ""
     if @user && @key
-      license = "PXEngine.licenseKey('#{@key}', forUser:'#{@user}')\n"
+      license = "Pixate.licenseKey('#{@key}', forUser:'#{@user}')\n"
     end
 
     code = <<EOF
@@ -31,8 +31,8 @@ class PixateConfig
 
 #{license}
 def style(str)
-  PXEngine.styleSheetFromSource(str, withOrigin:0)
-  PXEngine.applyStylesheets
+  Pixate.styleSheetFromSource(str, withOrigin:0)
+  Pixate.applyStylesheets
 end
 EOF
     pixate_file = './app/pixate_code.rb'
