@@ -7,7 +7,7 @@ Pixate gem for RubyMotion.
 ## Requirements
 
 - RubyMotion 1.0 or greater (see http://www.rubymotion.com).
-
+- The *motion-pixate* 2.0 gem requires Pixate Framework 2.0
 
 ## Setup
 
