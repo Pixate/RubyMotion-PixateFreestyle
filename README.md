@@ -11,10 +11,10 @@ Pixate gem for RubyMotion.
 
 ## Setup
 
-1. Download the Pixate Framework package from http://www.pixate.com/ and copy the `PXEngine.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
+1. Download the Pixate Framework package from http://www.pixate.com/ and copy the `Pixate.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
-$ ls vendor/PXEngine.framework
-/Headers/   PXEngine   Resources/ Versions/
+$ ls vendor/Pixate.framework
+/Headers/   Pixate   Resources/ Versions/
 ```
 
 2. Edit the `Rakefile` of your RubyMotion project and add the following require lines.
@@ -30,7 +30,7 @@ Motion::Project::App.setup do |app|
   # ...
   app.pixate.user = 'USER ID' # Valid key removes "splash screen"
   app.pixate.key  = 'KEY CODE' # Visit pixate.com/key for a free key
-  app.pixate.framework = 'vendor/PXEngine.framework'
+  app.pixate.framework = 'vendor/Pixate.framework'
 end
 ```
 
