@@ -13,7 +13,7 @@ class PixateConfig
     if @framework != path
       @config.unvendor_project(@framework)
       @framework = path
-      @config.vendor_project(path, :static, :products => ['Pixate'], :headers_dir => 'Headers')
+      @config.vendor_project(path, :static, :products => ['PixateFreestyle'], :headers_dir => 'Headers')
       create_code
     end
   end
