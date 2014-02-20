@@ -23,7 +23,7 @@ class PixateConfig
   def create_code
     license = ""
     if @user && @key
-      license = "Pixate.licenseKey('#{@key}', forUser:'#{@user}')\n"
+      license = "PixateFreestyle.licenseKey('#{@key}', forUser:'#{@user}')\n"
     end
 
     code = <<EOF
@@ -31,8 +31,8 @@ class PixateConfig
 
 #{license}
 def style(str)
-  Pixate.styleSheetFromSource(str, withOrigin:0)
-  Pixate.applyStylesheets
+  PixateFreestyle.styleSheetFromSource(str, withOrigin:0)
+  PixateFreestyle.applyStylesheets
 end
 EOF
     pixate_file = './app/pixate_code.rb'
