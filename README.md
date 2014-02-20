@@ -30,7 +30,7 @@ Motion::Project::App.setup do |app|
   # ...
   app.pixate.user = 'USER ID' # Valid key removes "splash screen"
   app.pixate.key  = 'KEY CODE' # Visit pixate.com/key for a free key
-  app.pixate.framework = 'vendor/Pixate.framework'
+  app.pixate.framework = 'vendor/PixateFreestyle.framework'
 end
 ```
 
