@@ -30,7 +30,7 @@ class PixateConfig
 
 def style(str)
   PixateFreestyle.styleSheetFromSource(str, withOrigin:0)
-  PixateFreestyle.applyStylesheets
+  PixateFreestyle.updateStylesForAllViews
 end
 EOF
     pixate_file = './app/pixate_code.rb'
