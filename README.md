@@ -7,14 +7,14 @@ Pixate gem for RubyMotion.
 ## Requirements
 
 - RubyMotion 1.0 or greater (see http://www.rubymotion.com).
-- The *motion-pixate* 2.0 gem requires Pixate Framework 2.0
+- The *motion-pixate* 2.1 gem requires PixateFreestyle Framework 2.1
 
 ## Setup
 
-1. Download the Pixate Framework package from http://www.pixate.com/ and copy the `Pixate.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
+1. Download the PixateFreestyle Framework package from http://www.pixate.com/ and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
-$ ls vendor/Pixate.framework
-/Headers/   Pixate   Resources/ Versions/
+$ ls vendor/PixateFreestyle.framework
+/Headers/   PixateFreestyle   Resources/ Versions/
 ```
 
 2. Edit the `Rakefile` of your RubyMotion project and add the following require lines.
@@ -23,14 +23,11 @@ require 'rubygems'
 require 'motion-pixate'
 ```
 
-3. Still in the `Rakefile`, set up the `user`, `key` and `framework` variables in your application configuration block. 
-This **free** key is available at [http://pixate.com/key](http://pixate.com/key).
+3. Still in the `Rakefile`, set up the `framework` variable in your application configuration block. 
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
-  app.pixate.user = 'USER ID' # Valid key removes "splash screen"
-  app.pixate.key  = 'KEY CODE' # Visit pixate.com/key for a free key
-  app.pixate.framework = 'vendor/Pixate.framework'
+  app.pixate.framework = 'vendor/PixateFreestyle.framework'
 end
 ```
 
@@ -39,7 +36,7 @@ end
 	@window.styleMode = PXStylingNormal
 ```
 
-5. Create the `default.css` in `resources` directory.
+5. Create the `default.css` in `resources` directory, or copy it from the pixate-blue theme.
 
 Note: To install the motion-pixate gem, see the [RubyGems site](https://rubygems.org/gems/motion-pixate).
 
