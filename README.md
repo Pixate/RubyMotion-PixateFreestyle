@@ -9,7 +9,7 @@ Pixate Freestyle gem for RubyMotion.
 
 ## Setup
 
-- Download the [Pixate Freestyle Framework](https://github.com/Pixate/pixate-freestyle-ios/releases)) and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
+- Download the [Pixate Freestyle Framework](https://github.com/Pixate/pixate-freestyle-ios/releases) and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
 $ ls vendor/PixateFreestyle.framework
 /Headers/   PixateFreestyle   Resources/ Versions/
