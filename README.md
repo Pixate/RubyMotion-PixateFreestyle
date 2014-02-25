@@ -25,7 +25,7 @@ require 'motion-pixatefreestyle'
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
-  app.pixate.framework = 'vendor/PixateFreestyle.framework'
+  app.pixatefreestyle.framework = 'vendor/PixateFreestyle.framework'
 end
 ```
 
