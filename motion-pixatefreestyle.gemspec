@@ -2,13 +2,14 @@
 Version = "2.1"
 
 Gem::Specification.new do |gem|
-  gem.name          = "motion-pixate"
+  gem.name          = "motion-pixatefreestyle"
   gem.version       = Version
   gem.authors       = ['Paul Colton', 'Shizuo Fujita']
   gem.email         = ['paul@pixate.com', 'watson1978@gmail.com']
-  gem.description   = 'Pixate integration for RubyMotion projects'
-  gem.summary       = 'motion-pixate allows RubyMotion projects to easily embed the Pixate Framework.'
-  gem.homepage      = 'https://github.com/Pixate/RubyMotion-Pixate'
+  gem.description   = 'Pixate Freestyle integration for RubyMotion projects'
+  gem.summary       = 'motion-pixatefreestyle allows RubyMotion projects to easily embed the Pixate Freestyle Framework.'
+  gem.homepage      = 'https://github.com/Pixate/RubyMotion-PixateFreestyle'
+  gem.licenses      = ["Apache-2.0"]
 
   files = []
   files << 'README.md'

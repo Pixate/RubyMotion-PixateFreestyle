@@ -2,7 +2,7 @@
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
 require 'rubygems'
-require 'motion-pixate'
+require 'motion-pixatefreestyle'
 
 begin
   require 'bundler'
@@ -13,7 +13,5 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'HelloWorld'
-  app.pixate.key  = 'KEY CODE'
-  app.pixate.user = 'USER ID'
-  app.pixate.framework = 'vendor/PXEngine.framework'
+  app.pixatefreestyle.framework = 'vendor/PixateFreestyle.framework'
 end
