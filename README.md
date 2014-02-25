@@ -9,19 +9,19 @@ Pixate Freestyle gem for RubyMotion.
 
 ## Setup
 
-1. Download the [Pixate Freestyle Framework](https://github.com/Pixate/pixate-freestyle-ios/releases)) and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
+- Download the [Pixate Freestyle Framework](https://github.com/Pixate/pixate-freestyle-ios/releases)) and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
 $ ls vendor/PixateFreestyle.framework
 /Headers/   PixateFreestyle   Resources/ Versions/
 ```
 
-2. Edit the `Rakefile` of your RubyMotion project and add the following require lines.
+- Edit the `Rakefile` of your RubyMotion project and add the following require lines.
 ```ruby
 require 'rubygems'
 require 'motion-pixatefreestyle'
 ```
 
-3. Still in the `Rakefile`, set up the `framework` variable in your application configuration block. 
+- Still in the `Rakefile`, set up the `framework` variable in your application configuration block. 
 ```ruby
 Motion::Project::App.setup do |app|
   # ...
@@ -29,7 +29,7 @@ Motion::Project::App.setup do |app|
 end
 ```
 
-4. Create the `default.css` in `resources` directory, or copy it from the pixate-blue theme.
+- Create the `default.css` in `resources` directory, or copy it from the pixate-blue theme.
 
 **Note**: To install the motion-pixatefreestyle gem:
 
