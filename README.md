@@ -1,17 +1,15 @@
-RubyMotion-Pixate
-=================
+#RubyMotion-PixateFreestyle
 
-Pixate gem for RubyMotion.
-
+Pixate Freestyle gem for RubyMotion.
 
 ## Requirements
 
 - RubyMotion 1.0 or greater (see http://www.rubymotion.com).
-- The *motion-pixate* 2.1 gem requires PixateFreestyle Framework 2.1
+- The *motion-pixatefreestyle* 2.1 gem requires [PixateFreestyle Framework 2.1](https://github.com/Pixate/pixate-freestyle-ios/releases) or later.
 
 ## Setup
 
-1. Download the PixateFreestyle Framework package from http://www.pixate.com/ and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
+1. Download the [Pixate Freestyle Framework](https://github.com/Pixate/pixate-freestyle-ios/releases)) and copy the `PixateFreestyle.framework` folder into `vendor` directory (or alternatively just create a symbolic link). Create the `vendor` directory if it does not exist. You should have something like this.
 ```
 $ ls vendor/PixateFreestyle.framework
 /Headers/   PixateFreestyle   Resources/ Versions/
@@ -20,7 +18,7 @@ $ ls vendor/PixateFreestyle.framework
 2. Edit the `Rakefile` of your RubyMotion project and add the following require lines.
 ```ruby
 require 'rubygems'
-require 'motion-pixate'
+require 'motion-pixatefreestyle'
 ```
 
 3. Still in the `Rakefile`, set up the `framework` variable in your application configuration block. 
@@ -31,14 +29,15 @@ Motion::Project::App.setup do |app|
 end
 ```
 
-4. Note: As of Pixate 1.1 beta 4, you need to add the following line to your `app_delegate` file in the `application(application, didFinishLaunchingWithOptions:launchOptions)` method before the `@window.makeKeyAndVisible` call:
-```ruby
-	@window.styleMode = PXStylingNormal
+4. Create the `default.css` in `resources` directory, or copy it from the pixate-blue theme.
+
+**Note**: To install the motion-pixatefreestyle gem:
+
+```
+gem install motion-pixatefreestyle
 ```
 
-5. Create the `default.css` in `resources` directory, or copy it from the pixate-blue theme.
-
-Note: To install the motion-pixate gem, see the [RubyGems site](https://rubygems.org/gems/motion-pixate).
+Or see the [RubyGems site](https://rubygems.org/gems/motion-pixatefreestyle).
 
 ## Example
 
@@ -102,18 +101,18 @@ Now you have a beautiful interface with just a few lines of CSS!
 
 ## SASS
 
-Pixate gem supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixate:init` command. Then, `rake pixate:sass` command generates the stylesheet from `default.scss`.
+Pixate gem supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixatefreestyle:init` command. Then, `rake pixatefreestyle:sass` command generates the stylesheet from `default.scss`.
 
 You could specify the Sass output style through `style` environment variable. For example,
 ```
-$ rake pixate:sass style=compressed
+$ rake pixatefreestyle:sass style=compressed
 ```
 
 You could use `nested`, `expanded`, `compact` and `compressed` as output style.
 
 ## REPL
 
-Pixate gem provides "style" method in REPL. You could change the stylesheet at the moment in REPL. For example,
+Pixate Freestyle gem provides a "style" method in REPL. You could change the stylesheet at the moment in REPL. For example,
 ```
 (main)> style "button { color : blue; }"
 (main)> style "button { background-color: red; border-radius: 20pt; }"
