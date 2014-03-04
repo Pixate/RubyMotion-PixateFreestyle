@@ -117,3 +117,9 @@ Pixate Freestyle gem provides a "style" method in REPL. You could change the sty
 (main)> style "button { color : blue; }"
 (main)> style "button { background-color: red; border-radius: 20pt; }"
 ```
+
+## Mailing List & Twitter
+
+Keep up with notifications and announcements by joining Pixate's [mailing list](http://pixatesurvey.herokuapp.com) and [follow us](http://twitter.com/Pixate) on Twitter.
+
+
