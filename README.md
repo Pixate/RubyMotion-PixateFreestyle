@@ -99,6 +99,10 @@ Now you have a beautiful interface with just a few lines of CSS!
 
 ![Final App](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/background_view.png)
 
+## Real-time Updating
+
+See [this gist](https://gist.github.com/pcolton/4410841) for an example of how to use the real-time updating features.
+
 ## SASS
 
 Pixate gem supports [Sass](http://sass-lang.com/) to generate the stylesheet. Create the `sass` directory and `default.scss` with the `rake pixatefreestyle:init` command. Then, `rake pixatefreestyle:sass` command generates the stylesheet from `default.scss`.
