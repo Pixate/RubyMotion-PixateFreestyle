@@ -53,8 +53,10 @@ In the app/app_delegate.rb file add PixateFreestyle.initializePixateFreestyle
 
 ```ruby
 def application(application, didFinishLaunchingWithOptions:launchOptions)
-* PixateFreestyle.initializePixateFreestyle
+  PixateFreestyle.initializePixateFreestyle
+  //your other stuff
 end
+```
 
 ## Add the CSS File
 
