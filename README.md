@@ -47,6 +47,17 @@ Type `rake` to make sure everything is good so far. You should see the Timer app
 
 ![Timer](https://raw.github.com/Pixate/RubyMotion-Pixate/master/Screenshots/timer_run.png)
 
+## Initialialize PixateFreestyle
+
+In the app/app_delegate.rb file add PixateFreestyle.initializePixateFreestyle
+
+```ruby
+def application(application, didFinishLaunchingWithOptions:launchOptions)
+  PixateFreestyle.initializePixateFreestyle
+  //your other stuff
+end
+```
+
 ## Add the CSS File
 
 In the `default.css` file you added prior, let's add a simple entry:
